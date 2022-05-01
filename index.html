@@ -3,9 +3,308 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>hello</title>
+	<title>Emily Briscoe | Gallery</title>
+	<style>
+		html,body{
+			padding: 0px;
+			margin: 0px;
+			background-color: #FFFFE0;
+		}
+		#header{
+			height: 200px;
+			text-align: center;
+			background-image: url("img/bckgd.jpg");
+			background-repeat: no-repeat;
+			width: 100%;
+		}
+		#header h1{
+			font-size: 80px;
+			padding: 0px;
+			padding-top: 50px;
+			margin:  0px;
+		}
+		#content{
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #cccccc;
+		}
+		.container{
+			overflow: hidden;
+			position: relative;
+			margin: 20px;
+		}
+		.container img{
+			width: 100%;
+			height: auto;
+		}
+		.side img{
+			width: 100%;
+			height: auto;
+		}
+		.row{
+			display: flex;
+		}
+		#column1{
+			width: 400px;
+			height: 400px;
+		}
+		#column1 img{
+			height: 100%;
+		}
+		.side{
+			margin-left: 90px;
+			width: 265px;
+			position: relative;
+		}
+		#column2{
+			padding-top: 20px;
+		}
+		.col1{
+			width: 400px;
+			height: 300px;
+		}
+		.col2{
+			width: 400px;
+			height: 300px;
+		}
+		.spcl{
+			height: 250px;
+		}
+		.three-h{
+			width: 28%;
+			height: 189px;
+		}
+		#stretch{
+			height: 189px;
+		}
+		#change{
+			height: 338px;
+		}
+		#change1{
+			height: 338px;
+		}
+		.three-v{
+			width: 28%;
+			height: 338px;
+		}
+		#c2 img{
+			height:  370px;
+			width:  auto;
+		}
+		.caption {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: black;
+			color:  whitesmoke;
+			font-size: 18px;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			background-color:  rgba(0,0,0,0.5);
+			visibility:  hidden;
+		}
+		.container:hover .caption {
+			visibility: visible;
+		}
+		.side:hover .caption {
+			visibility: visible;
+		}
+		#iframes{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		iframe{
+			margin-left: 20px;
+			margin-bottom: 20px;
+			width: 850px;
+			height: 500px;
+		}
+		#footer{
+			height: 50px;
+			text-align: center;
+			background-image: url("img/bckgd.jpg");
+			background-repeat: no-repeat;
+			width: 100%;
+		}
+		#footer p{
+			padding: 0px;
+			padding-top: 20px;
+			margin: 0px;
+		}
+	</style>
 </head>
 <body>
-<p>hello</p>
+	<div id="header">
+		<h1>Gallery</h1>
+	</div>
+	<div id="content">
+		<div id="row1" class="row">
+			<div id="column1" class="container">
+				<img src="img/me.jpg">
+				<div class="caption">
+					Hi! My name is Emily Briscoe!
+				</div>
+			</div>
+			<div id="column2">
+				<div class="side" id="one">
+					<img src = "img/sunrise.jpg">
+					<div class="caption">
+						This is a picture I took during a beautiful sunrise hike I did this summer.
+					</div>
+				</div>
+				<div class="side" id="2">
+					<img src = "img/yosemite.jpg"> 
+					<div class="caption">
+						I recently went to Yosemite for the first time and this is the first picture I took in the Valley.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="row2" class="row">
+			<div class="col1 container">
+				<img src = "img/trail.jpg" class="bottom">
+				<div class="caption">
+					This was pretty lookout during a 7 mile hike that I did.
+				</div>
+			</div>
+			<div class="col2 container">
+				<img src = "img/kalalau.jpg" class="bottom">
+				<div class="caption">
+					This is a picture I took while on a boat tour along the Na Pali coast!
+				</div>
+			</div>
+		</div>
+		<div id="row3" class="row">
+			<div class= "three-h container">
+				<img src = "img/orcas.jpg">
+				<div class="caption">
+					This is one of my favorite places in the world.
+				</div>
+			</div>
+			<div class="three-h container">
+				<img src = "img/canyon.jpg" id="stretch">
+				<div class="caption">
+					This is image that I captured while visiting the Grand Canyon of Kauai
+				</div>
+			</div>
+			<div class="three-h container">
+				<img src = "img/kauaiwf.jpg">
+				<div class="caption">
+					Fun Fact: this is the waterfall featured in the opening scenes of Fantasy Island
+				</div>
+			</div>
+		</div>
+		<div id="row4" class="row">
+			<div class= "three-v container">
+				<img src = "img/lexy.jpg" class="horizontal">
+				<div class="caption">
+					This is my favorite portrait that I have taken of my dog Lexy!
+				</div>
+			</div>
+			<div class="three-v container">
+				<img src = "img/flower.jpg">
+				<div class="caption">
+					These are some pretty flowers that I found
+				</div>
+			</div>
+			<div class="three-v container">
+				<img src = "img/emmett.jpg">
+				<div class="caption">
+					This is from the first time we took our dog Emmett to the snow. It was so fun!
+				</div>
+			</div>
+		</div>
+		<div id="row5" class="row">
+			<div class="col1 container spcl">
+				<img src = "img/trees.jpg" class="bottom">
+				<div class="caption">
+					I really love this photo that I took.
+				</div>
+			</div>
+			<div class="col2 container spcl">
+				<img src = "img/orcaswf.jpg" class="bottom">
+				<div class="caption">
+					I'm still learning to use shutter speed haha.
+				</div>
+			</div>
+		</div>
+		<div id="row6" class="row">
+			<div class="col1 container">
+				<img src = "img/ocean.jpg" class="bottom">
+				<div class="caption">
+					The clouds were really pretty this day.
+				</div>
+			</div>
+			<div class="col2 container">
+				<img src = "img/lookout.jpg" class="bottom">
+				<div class="caption">
+					If it isn't already obvious, I really loved my time on Kauai.
+				</div>
+			</div>
+		</div>
+		<div id="row7" class="row">
+			<div class="three-v container">
+				<img src = "img/baking.jpg">
+				<div class="caption">
+					I learned how to make raspberry souffles recently. My family loved them.
+				</div>
+			</div>
+			<div class="three-v container">
+				<img src = "img/snow.jpg">
+				<div class="caption">
+					I learned to ski last winter - I'm still working on it...
+				</div>
+			</div>
+			<div class="three-v container">
+				<img src = "img/pie.jpg" id="change1">
+				<div class="caption">
+					Every year, I make pies with my grandma for Thanksgiving.
+				</div>
+			</div>
+		</div>
+		<div id="row8" class="row">
+			<div class="three-v container">
+				<img src = "img/plant.jpg">
+				<div class="caption">
+					This plant definitely did not die :'(
+				</div>
+			</div>
+			<div class="three-v container">
+				<img src = "img/cube.jpg">
+				<div class="caption">
+					I recently learned how to solve a Rubik's Cube!
+				</div>
+			</div>
+			<div class="three-v container">
+				<img src = "img/painting.jpg" id="change">
+				<div class="caption">
+					I'm not a very good painter, but I still try :)
+				</div>
+			</div>
+		</div>
+		<div id="row9" class="row">
+			<div class="col1 container">
+				<img src = "img/house.jpg" class="bottom">
+				<div class="caption">
+					This is a picture of a house I helped build in Ensenada, Mexico on a mission trip.
+				</div>
+			</div>
+			<div class="col2 container">
+				<img src = "img/greentrail.jpg" class="bottom">
+				<div class="caption">
+					This hike was quite challenging, but the views were definitely worth it.
+				</div>
+			</div>
+		</div>
+		<div id="iframes">
+			<iframe src="media/carbon.pdf"></iframe>
+			<iframe src="media/hub.pdf"></iframe>
+		</div>
+	</div>
+	<div id="footer">
+		<p>University of Southern California ©2022</p>
+	</div>
 </body>
 </html>
